@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #eee;
+    margin: 10px;
+    font-family: 'Open Sans', Verdana, sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+    color: #424242;
+}
+
+ul {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul.page {
+    padding: 5x;
+    width: 520px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    background: #fff;
+    -webkit-filter : blur(8px);
+    -moz-filter : blur(8px);
+    filter : blur(8px);
+    opacity: 0.35;
+    transition: all 0.5s;
+    margin-right: 100px;
+}
+
+
+ul.page.active {
+    -webkit-filter : none;
+    -moz-filter : none;
+    filter : none;
+    opacity: 1;
+}
+
+ul.page li:nth-child(odd){
+    float: right;
+}
+
+img {
+    margin: 10px;
+    width: 240px;
+}
+
+nav {
+    text-align: center;
+    margin: 0 auto;
+    width: 560px;
+}
+
+.bubble {
+    width: 12px;
+    height: 12px;
+    background: #ccc;
+    border-radius: 100%;
+    margin-right: 15px;
+    float: left;
+    transition: all 0.5s;
+}
+
+.bubble:hover{
+    cursor: pointer;
+    background: #646464;
+}
+
+.bubble.active{
+    background: #424242;
+}
+
+#album {
+    width: 10000px;
+    transition: all 0.5s;
+}
+
+#slider {
+    overflow: hiddden;
+    padding: 20px;
+    width: 520px;
+    height: 610px;
+    margin: auto;
+}
